@@ -179,4 +179,26 @@
 
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>lorenharness</id>
+      <url>https://pkgs.dev.azure.com/lorenharness/_packaging/lorenharness/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>lorenharness</id>
+      <url>https://pkgs.dev.azure.com/lorenharness/_packaging/lorenharness/maven/v1</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <url>https://pkgs.dev.azure.com/lorenharness/_packaging/lorenharness/maven/v1</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
