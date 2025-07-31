@@ -1,5 +1,5 @@
 ARG tag
-FROM us-docker.pkg.dev/image-repo/maven:3.6.3-jdk-8 AS build-stage
+FROM us-central1-docker.pkg.dev/sales-209522/loren-test/maven:3.6.3-jdk-8 AS build-stage
 RUN whoami
 
 FROM scratch AS export-stage
