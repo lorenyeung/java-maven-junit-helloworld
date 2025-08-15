@@ -4,4 +4,4 @@ RUN whoami
 
 FROM scratch AS export-stage
 #WORKDIR /java-maven-junit-helloworld/
-COPY --from=build-stage /java-maven-junit-helloworld/target/surefire-reports/ .
+#COPY --from=build-stage /java-maven-junit-helloworld/target/surefire-reports/ .
