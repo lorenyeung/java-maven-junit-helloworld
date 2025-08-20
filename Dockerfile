@@ -1,6 +1,7 @@
 ARG tag
 FROM us-central1-docker.pkg.dev/sales-209522/loren-test/maven:3.6.3-jdk-8 AS build-stage
 RUN whoami
+WORKDIR /java-maven-junit-helloworld
 COPY java-maven-junit-helloworld/ .
 RUN ls -R /java-maven-junit-helloworld/target || true
 
